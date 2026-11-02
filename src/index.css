@@ -264,11 +264,46 @@ body {
 .ac-brand-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 12px;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--text-primary);
+}
+
+.ac-brand-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ac-deploy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  background: rgba(0, 229, 255, 0.14);
+  color: var(--accent-cyan);
+  border: 1px solid var(--accent-cyan);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  pointer-events: auto;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.12s ease;
+}
+
+.ac-deploy-btn:hover {
+  background: var(--accent-cyan);
+  color: #04060a;
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .ac-brand-meta {

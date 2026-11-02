@@ -120,11 +120,21 @@ export class HudController {
     topBar.innerHTML = `
       <div class="ac-brand-cluster">
         <div class="ac-brand-row">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <rect x="1" y="1" width="14" height="14" stroke="#00E5FF" stroke-width="1.5"/>
-            <rect x="4" y="4" width="8" height="8" fill="#5322FF"/>
-          </svg>
-          <span>Artificial Craft · JSON-Contract Pipeline Engine</span>
+          <div class="ac-brand-title-wrap">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="14" height="14" stroke="#00E5FF" stroke-width="1.5"/>
+              <rect x="4" y="4" width="8" height="8" fill="#5322FF"/>
+            </svg>
+            <span>Artificial Craft · JSON-Contract Pipeline Engine</span>
+          </div>
+          <a
+            href="https://artificialcraft.space"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ac-deploy-btn"
+          >
+            DEPLOY
+          </a>
         </div>
         <div class="ac-brand-meta" id="ac-sim-stats">
           VERIFIED RUNS: 0 · FAULTS INTERCEPTED: 0 · WEBHOOK: IDLE
